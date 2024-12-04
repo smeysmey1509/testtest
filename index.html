@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD Application</h1>
+      <form id="userForm">
+        <input type="hidden" id="userId" value="" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <button type="submit">Add User</button>
+      </form>
+      <div id="userList"></div>
+    </div>
+    <script src="app.js" type="module"></script>
+    <script type="module">
+      import Button from "https://smeysmey1509.github.io/testui/dist/button-component.js";
+      const btn = Button({ text: "Click Me", color: "blue" });
+      document.body.appendChild(btn);
+    </script>
+  </body>
+</html>
